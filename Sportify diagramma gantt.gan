@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-06-11" view-index="1" gantt-divider-location="347" resource-divider-location="300" version="3.3.3316" locale="it_IT">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="192" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="68" order="1"/>
+        <field id="tpd5" name="Data di fine" width="71" order="2"/>
+        <field id="tpd15" name="Note" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="764a56074024445fb6f8a7fb055fe63e" name="Progettazione" meeting="false" start="2025-05-19" duration="5" complete="0" expand="true">
+            <task id="7" uid="9af4c87a29734c15bf2478e6590068d3" name="Definizione requisiti funzionali (calcetti, tornei, squadre ecc.)" meeting="false" start="2025-05-19" duration="2" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="e76b1d210d75430283e679fc1f41170b" name="Modellazione database (utenti, tornei, squadre, partite...)" meeting="false" start="2025-05-21" duration="2" complete="0" expand="true"/>
+            <task id="9" uid="b24e882fc825487aa3abff4a17ad3fcf" name="Creazione struttura directory e file iniziali" meeting="false" start="2025-05-21" duration="1" complete="0" expand="true"/>
+            <task id="10" uid="53d91352016d4165bdda549f2611fdd6" name="UI/UX mockup pagine principali" meeting="false" start="2025-05-21" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="1" uid="9a1d995ef4ad475992bd3c5e0087c7de" name="Gestione utenti" meeting="false" start="2025-05-26" duration="4" complete="0" expand="true">
+            <task id="11" uid="0ef92994a37f476c871c25fdf8720fe1" name="Login, Registrazione, Sessione" meeting="false" start="2025-05-26" duration="2" complete="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" uid="6eafdad3c0e542e486b1ee6a32e78ad1" name="Gestione profilo e logout" meeting="false" start="2025-05-28" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="2" uid="4096ad5a948e4cc7b5abfc91ff65d79d" name="Implementazione calcetti" meeting="false" start="2025-05-30" duration="6" complete="0" expand="true">
+            <task id="13" uid="d1a0c91832a2453384e9463893aa85ab" name="Creazione calcetto (pubblico/privato), campo, numero giocatori+" meeting="false" start="2025-05-30" duration="2" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" uid="d526adcd07c9445196aaaab242c10f54" name="Iscrizione/abbandono calcetto" meeting="false" start="2025-06-03" duration="3" complete="0" expand="true"/>
+            <task id="15" uid="a9d7882af7204213a6d8b856b08619d6" name="Visualizzazione calcetti futuri e passati" meeting="false" start="2025-06-03" duration="3" complete="0" expand="true">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" uid="184e402e4dbd4e289734e443b301e3e7" name="Sistema chat interno calcetto" meeting="false" start="2025-06-06" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="3" uid="7dc753a0ac574ba7ab1097bd82b1bea4" name="Tornei - iscrizione" meeting="false" start="2025-06-09" duration="5" complete="0" expand="true">
+            <task id="17" uid="1c8375ca9faf4aa58f918d8239a3a8ff" name="Visualizza tornei disponibili" meeting="false" start="2025-06-09" duration="2" complete="0" expand="true">
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" uid="9a165162411748c8b4278fe38942cbba" name="Creazione squadra e assegnazione giocatori" meeting="false" start="2025-06-11" duration="2" complete="1" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" uid="4b8a614cab5b4da5b20868b5de3d6884" name="Gestione richieste di iscrizione di squadra" meeting="false" start="2025-06-13" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="4" uid="daf464f0dc2a4866a34185f95371da51" name="Tornei - organizzazione" meeting="false" start="2025-06-16" duration="10" complete="0" expand="true">
+            <task id="20" uid="28a2093d6b504beaad4fbcdf1d120330" name="Creazione torneo (tipologia, date, regole, max squadre)" meeting="false" start="2025-06-16" duration="2" complete="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" uid="523d6a2284ed4063abda42ecc6e31fa3" name="Assegnazione campi" meeting="false" start="2025-06-18" duration="2" complete="0" expand="true"/>
+            <task id="22" uid="bd0113248a9f48d59dffa4be3e5c40c4" name="Generazione calendario o tabellone" meeting="false" start="2025-06-18" duration="5" complete="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" uid="f9c2124abc30411da27433206c27c858" name="Visualizzazione calendario, risultati, classifica" meeting="false" start="2025-06-25" duration="2" complete="0" expand="true"/>
+            <task id="24" uid="cc7c9335523046a8a094731b7b67dcb6" name="Gestione fase finale (gironi multipli o eliminazione diretta)" meeting="false" start="2025-06-27" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="5" uid="acc52bda1d1644358634d12cb6ed3ae8" name="Extra e ottimizzazioni" meeting="false" start="2025-06-30" duration="5" complete="0" expand="true">
+            <task id="25" uid="7df0e036737b4372814fda5cdf83a8e6" name="Chat tornei" meeting="false" start="2025-06-30" duration="2" complete="0" expand="true"/>
+            <task id="26" uid="3dd272b65ae74ecea5fee9235cf35d84" name="PDF esportazione calendario" meeting="false" start="2025-06-30" duration="2" complete="0" expand="true"/>
+            <task id="27" uid="f464b8aa1f344dd5a2e2b2fae001804b" name="Sicurezza (verifica accessi, sanitizzazione dati)" meeting="false" start="2025-07-02" duration="3" complete="0" expand="true"/>
+            <task id="28" uid="08f1092b66204e2f98ae9bd792c08dda" name="Refactoring codice" meeting="false" start="2025-07-02" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="6" uid="00abb65439b6440eb823be3e067e2dde" name="Testing &amp; Deploy" meeting="false" start="2025-07-07" duration="9" complete="0" expand="true">
+            <task id="29" uid="4f4ddfb26c774e58b82e5ab5a942cc9c" name="Debug finale e test funzionali" meeting="false" start="2025-07-07" duration="5" complete="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" uid="af531c6618f2423bb664b6c33cb3ce3e" name="Hosting locale o su altervista" meeting="false" start="2025-07-14" duration="2" complete="0" expand="true">
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="31" uid="ceb2a844d9b14e47a247cd76db051a36" name="Documentazione" meeting="false" start="2025-07-16" duration="2" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Alessandro" function="Default:1" contacts="" phone="">
+            <rate name="standard" value="100"/>
+        </resource>
+        <resource id="1" name="Marco" function="Default:0" contacts="" phone="">
+            <rate name="standard" value="50"/>
+        </resource>
+        <resource id="2" name="Giulia" function="Default:0" contacts="" phone="">
+            <rate name="standard" value="50"/>
+        </resource>
+        <resource id="3" name="Luca" function="Default:0" contacts="" phone="">
+            <rate name="standard" value="50"/>
+        </resource>
+        <resource id="4" name="Elena" function="Default:0" contacts="" phone="">
+            <rate name="standard" value="50"/>
+        </resource>
+        <resource id="5" name="Fabio" function="Default:0" contacts="" phone="">
+            <rate name="standard" value="50"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="29" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="31" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="29" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="30" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="5" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
